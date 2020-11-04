@@ -1,0 +1,26 @@
+### Get all videos
+GET http://localhost:3000/api/videos
+
+### Get a single video
+GET http://localhost:3000/api/videos/5f8fa10d6341fa2f0b9ced05
+
+### Create video
+POST http://localhost:3000/api/videos
+Content-Type: application/json
+
+{
+  "title": "Break My Heart",
+  "description": "26 mar. 2020",
+  "url": "https://youtu.be/Nj2U6rhnucI"
+}
+
+### Update video
+PUT http://localhost:3000/api/videos/5f902c4684c68a14958834c9
+Content-Type: application/json
+
+{
+  "title": "Supalonely"
+}
+
+### Delete video
+DELETE http://localhost:3000/api/videos/5f903ae784c68a14958834ce
